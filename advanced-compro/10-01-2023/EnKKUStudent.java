@@ -18,6 +18,7 @@ class EnKKUStudent extends KKUStudent {
     }
 
     public String toString() {
-        return name + " is a KKU Engineering student with gear number as " + gearNumber + ".";
+        return name + " is a KKU Engineering student with gear number as " +
+        gearNumber + ".";
     }
 }
