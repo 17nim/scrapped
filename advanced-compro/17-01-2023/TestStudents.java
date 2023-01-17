@@ -1,11 +1,15 @@
 abstract class Student {
     String name;
     public abstract void writePrograms();
+
+    Student(String name) {
+        this.name = name;
+    }
 }
 
 class ComEnStudent extends Student {
     ComEnStudent(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void writePrograms()  {
@@ -15,7 +19,7 @@ class ComEnStudent extends Student {
 
 class DmeEnStudent extends Student {
     DmeEnStudent(String name) {
-        this.name = name;
+        super(name);
     }
 
     public void writePrograms()  {
